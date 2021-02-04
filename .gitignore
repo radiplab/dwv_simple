@@ -1,0 +1,22 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore .vscode folder
+.vscode
+
+# exclude everything
+dicom/*
+# exception to the rule
+!dicom/.gitkeep
+
+# dependencies
+#node_modules
+#bower_components
+
+# build
+build
+
+# misc
+npm-debug.log
+yarn-error.log
+index-dev.html
