@@ -3,6 +3,7 @@
 	// http://localhost/dwvDev/dwv.php?casefolder=0000063
 	// Wrapper around viewer.php to support loading of multiple sequences
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
