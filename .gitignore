@@ -6,8 +6,6 @@
 
 # exclude everything
 dicom/*
-# exception to the rule
-!dicom/.gitkeep
 
 # dependencies
 #node_modules
