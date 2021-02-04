@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px; padding: 0; 
+}
+
+/* Layers */
+
+/**jc - center image */
+.layerContainer { 
+    position: absolute; padding: 0;
+    margin: auto; text-align: center; }
+
+/*
+.layerContainer { 
+    position: relative; padding: 0;
+    margin: auto; text-align: center; }
+*/
+.imageLayer { 
+    position: absolute;
+    left: 0px; }
+.drawDiv { position: absolute; pointer-events: none; }
+.dropBox { 
+    border: 5px dashed #ccc;
+    margin: 20px auto; }
+.dropBox.hover { border: 5px dashed #cc0; }
+
+.inline { display: inline-block !important; }
+
+.message {
+	position: absolute;
+	color: white;
+	font-size: 2.0em;
+}
+
+/**jc - Display sequences */
+.sequencesContainer {
+	font: 1.6em arial, sans-serif;
+	text-align: left;
+	z-index: 99;
+}
+
+#sequencesList {
+	margin: 0px;
+}
+
+a.sequenceLink {
+    background-color: #6f6f6f;
+    color: white;
+    /*padding: 5px 10px;
+    margin: 5px;*/
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	text-shadow: none;
+	/* border-radius: 15px; */
+}
+
+a.sequenceLink:hover {
+    background-color: black;
+    color: white;
+}
+
+a.sequenceLinkActive {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+	margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	text-shadow: none;
+	/*border-radius: 15px;*/
+}
+
+#loadingOverlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#loadingImage {
+	position: absolute;
+}
+
+/** END JC */
+
+/* Info */
+.info { color: #cde; text-shadow: 1px 1px #000; font-size: 80%; }
+.infoc { color: #ff0; text-shadow: 1px 1px #000; font-size: 120%; }
+.infotl { position: absolute; top: 0; left: 0; text-align: left; }
+.infotc { position: absolute; top: 0; left: 50%; right: 50%; text-align: center; }
+.infotr { position: absolute; top: 0; right: 0; text-align: right; }
+.infocl { position: absolute; bottom: 50%; left: 0; text-align: left; }
+.infocr { position: absolute; bottom: 50%; right: 2px; text-align: right; }
+.infobl { position: absolute; bottom: 0; left: 0; text-align: left; }
+.infobc { position: absolute; bottom: 0; left: 50%; right: 50%; text-align: center; }
+.infobr { position: absolute; bottom: 0; right: 0; text-align: right; }
+
+.plot { position: absolute; width: 100px; height: 50px; bottom: 15px; right: 0; }
+.infoLayer ul { margin: 0; padding: 2px; list-style-type: none; }
+.infoLayer li { margin-top: 0; }
+.infoLayer canvas { margin: 0; padding: 2px; }
+
+/* Tag list */
+table.tagsTable { border-collapse: collapse; }
+table.tagsTable thead th { text-transform: uppercase;
+    font-weight: bold; opacity: 0.5;}
+table.drawsTable { border-collapse: collapse; }
+table.drawsTable td { vertical-align: middle; }
+table.drawsTable thead th { text-transform: uppercase;
+    font-weight: bold; opacity: 0.5;}
+.highlighted { background: #f87217; }
+.tags form { width: 50%; }
