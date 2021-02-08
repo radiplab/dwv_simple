@@ -7,7 +7,7 @@
 # exclude everything except sample
 dicom/*
 !dicom/.gitkeep
-!"dicom/Example CT Abdomens"
+!dicom/Example*CT*Abdomens
 
 # dependencies
 #node_modules
