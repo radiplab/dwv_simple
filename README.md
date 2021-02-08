@@ -1,9 +1,5 @@
 # dwv-simple
-Want to embed DICOM studies in online quizzes? This may be the answer for you. ivmartel developed the wonderful DICOM Web Viewer (DWV) and made it freely available on Github. I took a version of that viewer, and hacked it down and modified it to have the simple interface I wanted. The goal was to have something that basically just looked like an image on a quiz, but surprise, you could interact with it too. Here's an example:
-
-<figure>
-  <iframe src="https://www.radmodules.com/dwv/viewer-new.php?casefolder=0000242&sequence=EAC.zip&image=2&width=334&level=172" width="500" height="500" frameborder="0"></iframe>
-</figure>
+Want to embed DICOM studies in online quizzes? This may be the answer for you. ivmartel developed the wonderful DICOM Web Viewer (DWV) and made it freely available on Github. I took a version of that viewer, and hacked it down and modified it to have the simple interface I wanted. The goal was to have something that basically just looked like an image on a quiz, but surprise, you could interact with it too. [Here's an example.](https://www.radmodules.com/dwv/viewer-new.php?casefolder=0000242&sequence=EAC.zip&image=2&width=334&level=172)
 
 Important files include:
 index.php: This will list all folders in the dicom folder with a link to see each in the DWV (dwv.php)
